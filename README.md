@@ -15,30 +15,30 @@
 ## Caracteristicas:
 
 1. Login
-   - [x] Creación del token de acceso (JWT | access_token - refresh_token)
+   - [] Creación del token de acceso (JWT | access_token - refresh_token)
 2. Registro
-   - [x] Encriptación de contraseña (pkdpf2)
+   - [] Encriptación de contraseña (pkdpf2)
 3. Recuperar Contraseña
-   - [x] Generar una nueva contraseña encriptada
-   - [x] Enviar un correo con un template (html)
+   - [] Generar una nueva contraseña encriptada
+   - [] Enviar un correo con un template (html)
 4. CRUD por cada Modelo
-   - [x] Listado con paginación
-   - [x] Obtener un registro mediante el id
-   - [x] Creación de un registro
-   - [x] Actualización de un registro
-   - [x] Eliminar un registro (SoftDelete)
+   - [] Listado con paginación
+   - [] Obtener un registro mediante el id
+   - [] Creación de un registro
+   - [] Actualización de un registro
+   - [] Eliminar un registro (SoftDelete)
 5. Decoradores
-   - [x] Proteger las rutas mediante autenticación
-   - [x] Proteger las rutas por rol
+   - [] Proteger las rutas mediante autenticación
+   - [] Proteger las rutas por rol
 6. Documentación y validaciones
-   - [x] Swagger OpenAPI
+   - [] Swagger OpenAPI
 7. Despliegue
-   - [x] Render
+   - [] Render
 
 ## PIP
 
 ```ssh
-pip install Django psycopg2-binary python-decouple
+pip install Django psycopg2-binary python-decouple djangorestframework drf-yasg
 ```
 
 ## Enviroments
