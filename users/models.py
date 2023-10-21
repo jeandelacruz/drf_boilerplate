@@ -21,3 +21,12 @@ class User(AbstractUser):
     # Menciona los campos a validar (requeridos), para la creación desde el
     # UserManager (createsuperuser)
     REQUIRED_FIELDS = ['email', 'password']
+
+    # Metodo instancia (heredada)
+    def create_user(self, **kwargs):
+        # { 'username': 'username' }
+        # username=kwargs['username']
+        record = self.model(**kwargs)
+        record.set_password(kwargs['password'])
+        record.save()
+        return record
