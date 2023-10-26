@@ -8,7 +8,8 @@ views = get_schema_view(
         title='DRF Boilerplate',
         default_version='1.0',
         description='Documentación de los endpoints del boilerplate'
-    )
+    ),
+    public=True
 )
 
 urlpatterns = [

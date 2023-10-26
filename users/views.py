@@ -1,6 +1,6 @@
 from rest_framework.viewsets import generics
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status, permissions
 from drf_yasg.utils import swagger_auto_schema
 from django.shortcuts import get_object_or_404
 from django.core.paginator import Paginator
@@ -15,6 +15,7 @@ schema = UserSchema()
 class UserView(generics.GenericAPIView):
     serializer_class = UserSerializer  # shallow
     http_method_names = ['get', 'post']
+    permission_classes = [permissions.IsAuthenticated]
 
     @swagger_auto_schema(
         operation_summary='Endpoint para listar los usuarios',
@@ -62,6 +63,7 @@ class UserView(generics.GenericAPIView):
 class UserGetByIdView(generics.GenericAPIView):
     serializer_class = UserSerializer
     http_method_names = ['get', 'patch', 'delete']
+    permission_classes = [permissions.IsAuthenticated]
 
     @swagger_auto_schema(
         operation_summary='Endpoint para traer un usuario por el ID',

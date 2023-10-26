@@ -38,7 +38,8 @@
 ## PIP
 
 ```ssh
-pip install Django psycopg2-binary python-decouple djangorestframework drf-yasg
+pip install Django psycopg2-binary python-decouple djangorestframework drf-yasg djangorestframework-simplejwt
+
 ```
 
 ## Enviroments
